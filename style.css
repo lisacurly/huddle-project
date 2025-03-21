@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1290px;
+  margin-inline: auto;
+  padding-inline: 10px;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  header {
+    padding-block-start: 65px;
+    padding-block-end: 72px;
+    color: #00252e;
+    height: 100vh;
+    background-image: url(./images/HERO\ BG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .container {
+      .header-top {
+        margin-block-end: 71px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        img {
+          width: 200px;
+          height: 31px;
+        }
+        a {
+          color: #00252e;
+          background-color: #fff;
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+          border-radius: 24px;
+          padding: 13px 63px 16px 65px;
+          display: inline-block;
+          transition: 0.5s;
+        }
+        a:hover {
+          color: #808e9a;
+        }
+      }
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-block-end: 73px;
+        flex-wrap: wrap;
+        row-gap: 56px;
+        .build {
+          max-width: 536px;
+          height: 321px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          row-gap: 32px;
+          h1 {
+            font-family: "Poppins";
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 27px;
+            max-width: 520px;
+            width: 100%;
+          }
+          a {
+            display: inline-block;
+            color: #fff;
+            background-color: #ff52c1;
+            border-radius: 28px;
+            padding: 17px 69px 20px 70px;
+            box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+            transition: 0.5s;
+            &:hover {
+              background-color: #ff9adb;
+            }
+          }
+        }
+        .bg-img {
+          width: 680px;
+          height: 482px;
+          background-image: url(./images/illustration-mockups.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  main {
+    div.container {
+      min-height: 440px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      row-gap: 24px;
+      margin-block-end: 40px;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
+      border-radius: 16px;
+      section {
+        max-width: 500px;
+        height: 139px;
+        margin-block-end: 24px;
+        h2 {
+          font-family: "Poppins";
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 42px;
+          color: #00252e;
+          margin-block-end: 16px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 27px;
+          color: #808e9a;
+        }
+      }
+      div {
+        max-height: 440px;
+        max-width: 440px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-block-end: 24px;
+      }
+      div.grow {
+        background-image: url(./images/illustration-grow-together.svg);
+        width: 406px;
+        height: 332px;
+      }
+      div.flow {
+        background-image: url(./images/illustration-flowing-conversation.svg);
+        width: 418px;
+        height: 297px;
+      }
+      div.users {
+        background-image: url(./images/illustration-your-users.svg);
+        width: 420px;
+        height: 318px;
+      }
+    }
+    div.container:first-child {
+      margin-block-start: 159px;
+    }
+    div.container:last-child {
+      margin-block-end: 344px;
+    }
+  }
+  footer {
+    background-color: #00252e;
+    color: #fff;
+    position: relative;
+    min-height: 418px;
+    padding-block-start: 144px;
+    font-size: 14px;
+    line-height: 24px;
+
+    div.footer-top {
+      background-color: #fff;
+      max-width: 800px;
+      width: 100%;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+      border-radius: 15px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -66%);
+
+      h3 {
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 60px;
+        color: #00252e;
+      }
+      a {
+        display: inline-block;
+        color: #fff;
+        background-color: #ff52c1;
+        padding: 25px 100px;
+        border-radius: 40px;
+        box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+        transition: 0.5s;
+        &:hover {
+          background-color: #ff9adb;
+        }
+      }
+    }
+    div.footer-content {
+      padding-block-start: 56px;
+      display: flex;
+      flex-direction: row;
+      row-gap: 130px;
+
+      a {
+        display: block;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+      li {
+        list-style-type: none;
+        display: block;
+      }
+      address {
+        max-width: 380px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        img {
+          position: absolute;
+          left: 0;
+          top: -36%;
+        }
+        position: relative;
+        a {
+          padding-inline-start: 40px;
+          &[href^="https"] {
+            background-image: url(./images/icon-location.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+          }
+          &[href^="tel"] {
+            background-image: url(./images/icon-phone.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+          }
+          &[href^="mailto"] {
+            background-image: url(./images/icon-email.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+          }
+        }
+      }
+      nav {
+        max-width: 480px;
+        width: 100%;
+        ul.nav-items {
+          display: flex;
+          justify-content: space-evenly;
+          .column ul li {
+            margin-block-end: 12px;
+            transition: 0.5s;
+          }
+          .column li:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      div {
+        max-width: 480px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ul {
+          display: flex;
+          column-gap: 12px;
+          li a {
+            width: 32px;
+            height: 32px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.5s;
+            &.fb {
+              background-image: url(./images/fb-white.png);
+            }
+            &.fb:hover {
+              background-image: url(./images/fb-pink.png);
+            }
+            &.twitter {
+              background-image: url(./images/tw-white.png);
+            }
+            &.twitter:hover {
+              background-image: url(./images/tw-pink.png);
+            }
+            &.inst {
+              background-image: url(./images/inst-white.png);
+            }
+            &.inst:hover {
+              background-image: url(./images/inst-pink.png);
+            }
+          }
+        }
+        p {
+          font-family: "Poppins";
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
